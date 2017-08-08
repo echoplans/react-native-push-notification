@@ -400,7 +400,7 @@ public class RNPushNotificationHelper {
 
             if (bundle.containsKey("tag")) {
                 String tag = bundle.getString("tag");
-                notificationManager.notify(tag, notificationID, info);
+                notificationManager.notify(tag, 1, info);
             } else {
                 notificationManager.notify(notificationID, info);
             }
