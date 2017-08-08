@@ -91,9 +91,7 @@ Notifications.configure = function(options: Object) {
 	if ( this.hasPoppedInitialNotification === false &&
 			( options.popInitialNotification === undefined || options.popInitialNotification === true ) ) {
 		this.popInitialNotification(function(firstNotification) {
-			if ( firstNotification !== null ) {
 				this._onNotification(firstNotification, true);
-			}
 		}.bind(this));
 		this.hasPoppedInitialNotification = true;
 	}
